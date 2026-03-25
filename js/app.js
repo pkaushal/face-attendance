@@ -83,11 +83,11 @@ const App = {
     });
 
     document.getElementById('login-google')?.addEventListener('click', () => {
-      window.location.href = 'http://localhost:3000/auth/google';
+      window.location.href = 'http://dev.konsoftech.in:3000/auth/google';
     });
 
     document.getElementById('login-github')?.addEventListener('click', () => {
-      window.location.href = 'http://localhost:3000/auth/github';
+      window.location.href = 'http://dev.konsoftech.in:3000/auth/github';
     });
 
     document.getElementById('logout-btn').addEventListener('click', async () => {
