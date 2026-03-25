@@ -1,5 +1,5 @@
 const API = {
-  baseUrl: 'http://localhost:3000',
+  baseUrl: 'http://dev.konsoftech.in:3000',
 
   async request(endpoint, options = {}) {
     const res = await fetch(`${this.baseUrl}${endpoint}`, {
