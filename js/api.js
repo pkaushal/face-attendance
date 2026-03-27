@@ -1,5 +1,5 @@
 const API = {
-  baseUrl: 'http://dev.konsoftech.in:3000',
+  baseUrl: (typeof window !== 'undefined' && window.API_URL) ? window.API_URL.replace(/\/+$/,'') : '',
 
   async request(endpoint, options = {}) {
     const res = await fetch(`${this.baseUrl}${endpoint}`, {

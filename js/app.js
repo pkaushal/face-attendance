@@ -83,11 +83,13 @@ const App = {
     });
 
     document.getElementById('login-google')?.addEventListener('click', () => {
-      window.location.href = 'http://dev.konsoftech.in:3000/auth/google';
+      const baseUrl = API.baseUrl || (typeof window !== 'undefined' ? window.API_URL : '');
+      window.location.href = `${baseUrl}/auth/google`;
     });
 
     document.getElementById('login-github')?.addEventListener('click', () => {
-      window.location.href = 'http://dev.konsoftech.in:3000/auth/github';
+      const baseUrl = API.baseUrl || (typeof window !== 'undefined' ? window.API_URL : '');
+      window.location.href = `${baseUrl}/auth/github`;
     });
 
     document.getElementById('logout-btn').addEventListener('click', async () => {
